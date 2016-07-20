@@ -88,3 +88,5 @@ gulp.task('hello',function(){
 
 ```
 
+
+合并后我们可以对JS文件进行合并，最小化处理
