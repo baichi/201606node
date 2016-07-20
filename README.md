@@ -56,3 +56,16 @@ npm config set registry "http://registry.npm.taobao.org"
 ```
 
 
+## 2. 安装
+全局安装
+```
+npm install gulp -g
+```
+本地安装
+先创建目录，目录名称一定不能叫**gulp**
+```
+mkdir learngulp
+cd learngulp
+npm init -y
+npm install gulp --save-dev
+```
