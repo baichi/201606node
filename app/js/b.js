@@ -1,1 +1,1 @@
-console.log('b');
+var a = 10;

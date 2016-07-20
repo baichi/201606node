@@ -1,10 +1,8 @@
 var gulp =require('gulp');
-//1.安装插件
-//引入此插件
-var less = require('gulp-less');
-gulp.task('less',function(){
-    //使用此插件
-    gulp.src('./app/less/*.less')
-        .pipe(less())
-        .pipe(gulp.dest('./dist/css'))
+var $ = require('gulp-load-plugins')();
+
+gulp.task('js',function(){
+    gulp.src(['./app/js/b.js','./app/js/a.js'])
+        .pipe($.concat('all.js'))//指定合并后的文件名
+        .pipe(gulp.dest('./dist/js'))
 });
