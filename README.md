@@ -78,4 +78,13 @@ C:\Users\Administrator\AppData\Roaming\npm\node_modules
 C:\Users\Administrator\AppData\Roaming\npm
 ```
 
-## 4. 
+## 4. 定义任务并执行
+新建一个gulpfile.js文件
+在此文件中新建一个任务
+```
+gulp.task('hello',function(){
+     console.log('hello');
+});
+
+```
+

@@ -7,6 +7,13 @@ var gulp = require('gulp');
  * taskname 任务的名字
  * fn 任务的定义，函数
  */
-gulp.task('hello',function(){
-    console.log('hello');
+gulp.task('copy',function(){
+    /**
+     * 先从源文件中读取源文件
+     * 然后再通过pipe方法以管道的方式导出到目标目录中
+     */
+    gulp.src('./app/index.html')//获取要输入的方法
+        .pipe(gulp.dest('./dist'));//指定要保存的目录
 });
+
+
