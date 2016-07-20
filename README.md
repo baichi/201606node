@@ -10,7 +10,7 @@ https://zhufengnodejs.github.io/doc/html/%E6%A1%86%E6%9E%B6%E5%92%8C%E5%BA%93/gu
 https://github.com/zhufengnodejs/201606node
 ```
 
-### 1.2 配置hosts文件
+### 1.2 配置hosts文件(如果在学校内网中的话要改，在线同学不需要)
 配置域名和IP的映射的
 如果是win8或win10,hosts文件不能直接修改
 需要先拷贝到桌面上，然后用记事本修改，
@@ -44,13 +44,11 @@ www.zhufengnpm.cn
 
 通过内网下载npm包
 ```
-npm install mime --registry http://www.zhufengnpm.cn
+npm install mime --registry http://registry.npm.taobao.org
 ```
 
 如果需要永久修改配置
 ```
-改为内网的源
-npm config set registry "http://www.zhufengnpm.cn"
 改为淘宝的源
 npm config set registry "http://registry.npm.taobao.org"
 ```
@@ -64,8 +62,20 @@ npm install gulp -g
 本地安装
 先创建目录，目录名称一定不能叫**gulp**
 ```
-mkdir learngulp
-cd learngulp
-npm init -y
-npm install gulp --save-dev
+$ mkdir learngulp
+$ cd learngulp
+$ npm init -y
+//一定要先初始化项目(npm init -y)后才能去本地安装gulp
+$ npm install gulp --save-dev
 ```
+
+## 3. 配置环境变量
+```
+先去查看全局变量
+E:\201606node>npm root -g
+C:\Users\Administrator\AppData\Roaming\npm\node_modules
+然后把此目录配置到path中去
+C:\Users\Administrator\AppData\Roaming\npm
+```
+
+## 4. 
