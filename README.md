@@ -12,7 +12,9 @@ https://github.com/zhufengnodejs/201606node
 
 ### 1.2 配置hosts文件
 配置域名和IP的映射的
-
+如果是win8或win10,hosts文件不能直接修改
+需要先拷贝到桌面上，然后用记事本修改，
+改完后拷贝回去，如果提示是否覆盖，则选择是
 windows
 ```
 c:\windows\system32\drivers\etc\HOSTS
